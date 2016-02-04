@@ -1,0 +1,19 @@
+Start,End,Duration,SrcAddr,DstAddr,SrdPort,DstPort,Proto,flg,fwd,stos,ipkt,ibyt,opkt,obyt,inIF,outIF,sAS,dAS,smk,dmk,dtos,dir,NextHop,BGPNextHop,svln,dvln,ismc,odmc,idmc,osmc,mpls1,mpls2,mpls3,mpls4,mpls5,mpls6,mpls7,mpls8,mpls9,mpls10,cl,sl,al,RouterIP,eng,exid,tr
+
+
+fwd,stos,ipkt,ibyt,opkt,obyt,in,out,sas,das,smk,dmk,dtos
+fwd,stos,ipkt,ibyt,opkt,obyt,inIF,outIF,sAS,dAS,smk,dmk,dtos
+
+
+Integer nf_stos = Integer.valueOf(pieces[9]);
+			Integer nf_ipkt = Integer.valueOf(pieces[10]);
+			Integer nf_ibyt = Integer.valueOf(pieces[11]);
+			Integer nf_opkt = Integer.valueOf(pieces[12]);
+			Integer nf_obyt = Integer.valueOf(pieces[13]);
+			Integer nf_inIF = Integer.valueOf(pieces[14]);
+			Integer nf_outIF = Integer.valueOf(pieces[15]);
+			Integer nf_sAS = Integer.valueOf(pieces[16]);
+			Integer nf_dAS = Integer.valueOf(pieces[17]);
+			Integer nf_smk = Integer.valueOf(pieces[18]);
+			Integer nf_dmk = Integer.valueOf(pieces[19]);
+			Integer nf_dtos = Integer.valueOf(pieces[20]);

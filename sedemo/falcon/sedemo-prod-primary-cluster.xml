@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<cluster xmlns="uri:falcon:cluster:0.1" colo="Layer42 Mountain View,CA" description="HDP 2.1 Demo Cluster" name="sedemo-prod-primary-cluster">
+  <interfaces>
+    <interface type="readonly" endpoint="hftp://hdp2-master1.cloud.hortonworks.com:50070" version="2.2.0"/>
+    <interface type="write" endpoint="hdfs://hdp2-master1.cloud.hortonworks.com:8020" version="2.2.0"/>
+    <interface type="execute" endpoint="hdp2-master1.cloud.hortonworks.com:8050" version="2.4.0"/>
+    <interface type="workflow" endpoint="http://hdp2-master1.cloud.hortonworks.com:11000/oozie/" version="4.0.0"/>
+    <!--interface type="registry" endpoint="thrift://hdp2-master1.cloud.hortonworks.com:9083" version="0.13.0"/-->
+    <interface type="messaging" endpoint="tcp://hdp2-master1.cloud.hortonworks.com:61616?daemon=true" version="5.1.6"/>
+  </interfaces>
+  <locations>
+    <location name="staging" path="/apps/falcon/sedemo-prod-primary-cluster/staging"/>
+    <location name="temp" path="/tmp"/>
+    <location name="working" path="/apps/falcon/sedemo-prod-primary-cluster/working"/>
+  </locations>
+</cluster>

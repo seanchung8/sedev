@@ -1,0 +1,2 @@
+log4j.logger.org.apache.pig=ERROR, A
+log4j.logger.org.apache.hadoop=ERROR, A

@@ -1,0 +1,2 @@
+A = LOAD 'hdfs:///repdata/ipreputation.csv' USING PigStorage(',') AS (ip:chararray, exploit_type:chararray, score:chararray, created:chararray, modified:chararray, count:chararray, hashcode:chararray);
+STORE A INTO 'ip_reputation_data' USING org.apache.hcatalog.pig.HCatStorer();

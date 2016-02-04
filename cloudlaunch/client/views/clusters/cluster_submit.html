@@ -1,0 +1,59 @@
+<template name="clusterSubmit">
+  <form class="main">
+
+    <div class="control-group">
+        <label class="control-label" for="provider">Select a provider</label>
+        <div class="controls">
+            <select name="provider" class="action-selects">
+                <option value="hwcloud">Hortonworks Cloud</option>
+		<option value="azure">Azure</option>
+		<option value="amazon">Amazon</option>
+	    </select>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="blueprint">Select a blueprint</label>
+        <div class="controls">
+	    <select name="blueprint">
+		<option value="small">Small</option>
+		<option value="medium">Medium</option>
+	    </select> 
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="name">Choose a name for the cluster</label>
+        <div class="controls">
+            <input name="name" type="text" value="" placeholder="Cluster name"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="username">Provide your username</label>
+        <div class="controls">
+            <input name="username" type="text" value="" placeholder="Provider username"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="password">Provide your password</label>
+        <div class="controls">
+            <input name="password" type="text" value="" placeholder="Provider password"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="sshkey">SSH Key</label>
+        <div class="controls">
+            <textarea name="sshkey" type="text" value=""></textarea>
+        </div>
+    </div> 
+
+    <div class="control-group">
+        <div class="controls">
+            <input type="submit" value="Submit" class="btn btn-primary"/>
+        </div>
+    </div>
+  </form>
+</template>

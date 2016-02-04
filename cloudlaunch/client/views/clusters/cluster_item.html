@@ -1,0 +1,11 @@
+<template name="clusterItem">
+  <div class="post">
+    <div class="post-content">
+      <h3>{{name}} <span>{{blueprint}} cluster on {{provider}}</span></h3>
+      <p>Submitted by {{owner}}
+        {{#if ownCluster}}<a href="{{pathFor 'clusterEdit'}}">Edit</a>{{/if}}
+      </p>
+    </div>
+    <a href="{{pathFor 'clusterPage'}}" class="discuss btn">Settings</a>
+  </div>
+</template>

@@ -1,0 +1,8 @@
+set HIVE_LIB=/usr/lib/hive/lib;
+add jar 
+${hiveconf:HIVE_LIB}/parquet-column-1.2.2.jar
+${hiveconf:HIVE_LIB}/parquet-common-1.2.2.jar
+${hiveconf:HIVE_LIB}/parquet-encoding-1.2.2.jar
+${hiveconf:HIVE_LIB}/parquet-format-1.0.0-t2.jar 
+${hiveconf:HIVE_LIB}/parquet-hadoop-1.2.2.jar 
+${hiveconf:HIVE_LIB}/parquet-hive-1.2.2.jar;

@@ -1,0 +1,22 @@
+          c_last_name           |     c_first_name     | s_store_name |  paid   
+--------------------------------+----------------------+--------------+---------
+ Cook                           | Amy                  | bar          | 1164.68
+ James                          | Edward               | bar          | 2399.76
+ Usher                          | Lisa                 | ation        | 1112.32
+ Gentry                         | Robert               | ought        |  291.72
+                                |                      | able         |  368.28
+ Dennis                         | Jess                 | bar          |  184.80
+ Price                          | Kirk                 | bar          | 2809.84
+(7 rows)
+
+          c_last_name           |     c_first_name     | s_store_name |  paid   
+--------------------------------+----------------------+--------------+---------
+ Dunn                           | Barbara              | ation        | 3446.96
+ Griffith                       | Ray                  | able         | 1946.56
+ Scherer                        | Charles              | ation        |  330.00
+(3 rows)
+
+
+real	0m7.349s
+user	0m0.001s
+sys	0m0.003s

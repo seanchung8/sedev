@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cluster xmlns="uri:falcon:cluster:0.1" name="sedemo-prod-backup-cluster" description="HDP 2.1 Backup Cluster" colo="Layer42 Mountain View,CA">
+  <interfaces>
+    <interface type="readonly" endpoint="hftp://hdp2-backup.cloud.hortonworks.com:50070" version="2.2.0"/>
+    <interface type="write" endpoint="hdfs://hdp2-backup.cloud.hortonworks.com:8020" version="2.2.0"/>
+    <interface type="execute" endpoint="hdp2-backup.cloud.hortonworks.com:8050" version="2.2.0"/>
+    <interface type="registry" endpoint="thrift://hdp2-backup.cloud.hortonworks.com:9083" version="0.13.0"/>
+    <interface type="workflow" endpoint="http://hdp2-backup.cloud.hortonworks.com:11000/oozie/" version="4.0.0"/>
+    <interface type="messaging" endpoint="tcp://hdp2-backup.cloud.hortonworks.com:61616?daemon=true" version="5.1.6"/>
+  </interfaces>
+  <locations>
+    <location name="staging" path="/apps/falcon/sedemo-prod-backup-cluster/staging"/>
+    <location name="temp" path="/tmp"/>
+    <location name="working" path="/apps/falcon/sedemo-prod-backup-cluster/working"/>
+  </locations>
+</cluster>

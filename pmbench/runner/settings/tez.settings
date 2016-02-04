@@ -1,0 +1,35 @@
+set hive.cli.errors.ignore=true;
+
+set hive.enforce.bucketing=true;
+set hive.enforce.sorting=true;
+set hive.map.aggr=true;
+set hive.optimize.bucketmapjoin=false;
+set hive.optimize.bucketmapjoin.sortedmerge=false;
+set hive.mapred.reduce.tasks.speculative.execution=false;
+set hive.auto.convert.join=true;
+set hive.auto.convert.sortmerge.join=false;
+set hive.auto.convert.sortmerge.join.noconditionaltask=false;
+set hive.auto.convert.join.noconditionaltask=true;
+set hive.auto.convert.join.noconditionaltask.size=200000000;
+set hive.optimize.reducededuplication.min.reducer=1;
+set hive.optimize.mapjoin.mapreduce=true;
+set hive.stats.autogather=false;
+
+-- for these mapred settings: The will be differnt for you. The important part is to keep map/reduce at the same size for tez.
+set mapred.reduce.parallel.copies=30;
+set mapred.job.shuffle.input.buffer.percent=0.5;
+set mapred.job.reduce.input.buffer.percent=0.2;
+set mapred.map.child.java.opts=-server -Xmx3500m -Djava.net.preferIPv4Stack=true;
+set mapred.reduce.child.java.opts=-server -Xmx3500m -Djava.net.preferIPv4Stack=true;
+set mapreduce.map.memory.mb=4096;
+set mapreduce.reduce.memory.mb=4096;
+
+set mapreduce.map.output.compress=true;
+set mapreduce.map.output.compress.codec=org.apache.hadoop.io.compress.DefaultCodec;
+
+set hive.orc.splits.include.file.footer=true;
+
+set hive.root.logger=ERROR;
+set hive.vectorized.execution.enabled=true;
+set hive.vectorized.groupby.flush.percent=0.9;
+

@@ -1,0 +1,2 @@
+hdfs dfs -mkdir /netflow-enriched
+hdfs dfs -chmod 777 /netflow-enriched

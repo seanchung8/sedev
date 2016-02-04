@@ -1,0 +1,5 @@
+Use the following scripts to work with your VM's on SE Cloud.
+
+bootstrap.sh - Used to prep the machines for HDP installation
+solr.sh - Used to install Apache Solr and the Lucidworks connector on a VM.  For now, it needs to be installed on the namenode.
+kafka.sh - Used to install Kafka.  Make sure to install to a Zookeper node, or it won't work!

@@ -1,0 +1,2 @@
+set mapred.map.child.java.opts=-server -Xmx2000M -XX:+AggressiveOpts;
+set mapred.reduce.child.java.opts=-server -Xmx2000M -XX:+AggressiveOpts;

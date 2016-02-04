@@ -1,0 +1,49 @@
+ state | cnt 
+-------+-----
+ CT    |  11
+ ME    |  14
+ WA    |  22
+ UT    |  23
+ OR    |  24
+ NM    |  25
+ MD    |  25
+ ID    |  27
+ AK    |  30
+ LA    |  35
+ SD    |  37
+ ND    |  40
+ SC    |  42
+ AL    |  46
+ MT    |  49
+ NY    |  52
+ WI    |  55
+ CO    |  55
+ PA    |  56
+ WV    |  56
+ CA    |  58
+ FL    |  59
+ OK    |  59
+ AR    |  60
+ MN    |  61
+ MS    |  62
+ TN    |  64
+ IN    |  71
+ IA    |  71
+ MO    |  75
+ KY    |  77
+       |  78
+ NE    |  79
+ OH    |  81
+ MI    |  81
+ IL    |  89
+ KS    |  93
+ NC    |  96
+ VA    |  98
+ GA    | 125
+ TX    | 187
+(41 rows)
+
+
+real	3m14.543s
+user	0m0.001s
+sys	0m0.005s

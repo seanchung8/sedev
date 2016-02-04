@@ -1,0 +1,2 @@
+set hive.optimize.correlation=true;
+set hive.auto.convert.join=false;

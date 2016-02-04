@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema name="netflow_enriched" version="1.5">
+<fields>
+  <!-- mandatory fields -->
+  <field name="_version_" type="long" indexed="true" stored="true"/>
+  <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
+  
+  <!-- Netflow domain fields -->
+  <field name="nf_Start" type="date" indexed="true" stored="true"/>
+  <field name="nf_End" type="date" indexed="true" stored="true"/>
+  <field name="nf_Duration" type="float" indexed="true" stored="true"/>
+  <field name="nf_SrcAddr" type="string" indexed="true" stored="true"/>
+  <field name="nf_DstAddr" type="string" indexed="true" stored="true"/>
+  <field name="nf_SrdPort" type="long" indexed="true" stored="true"/>
+  <field name="nf_DstPort" type="long" indexed="true" stored="true"/>
+  <field name="nf_Proto" type="string" indexed="true" stored="true"/>
+  <field name="nf_flg" type="string" indexed="true" stored="true"/>
+  <field name="nf_fwd" type="long" indexed="true" stored="true"/>
+  <field name="nf_stos" type="long" indexed="true" stored="true"/>
+  <field name="nf_ipkt" type="long" indexed="true" stored="true"/>
+  <field name="nf_ibyt" type="string" indexed="true" stored="true"/>
+  <field name="nf_opkt" type="string" indexed="true" stored="true"/>
+  <field name="nf_obyt" type="long" indexed="true" stored="true"/>
+  <field name="nf_inIF" type="long" indexed="true" stored="true"/>
+  <field name="nf_outIF" type="long" indexed="true" stored="true"/>
+  <field name="nf_sAS" type="long" indexed="true" stored="true"/>
+  <field name="nf_dAS" type="long" indexed="true" stored="true"/>
+  <field name="nf_smk" type="long" indexed="true" stored="true"/>
+  <field name="nf_dmk" type="long" indexed="true" stored="true"/>
+  <field name="nf_dtos" type="long" indexed="true" stored="true"/>
+  <field name="nf_dir" type="long" indexed="true" stored="true"/>
+  <field name="nf_NextHop" type="string" indexed="true" stored="true"/>
+  <field name="nf_BGPNextHop" type="string" indexed="true" stored="true"/>
+  <field name="nf_svln" type="long" indexed="true" stored="true"/>
+  <field name="nf_dvln" type="long" indexed="true" stored="true"/>
+  <field name="nf_ismc" type="string" indexed="true" stored="true"/>
+  <field name="nf_odmc" type="string" indexed="true" stored="true"/>
+  <field name="nf_idmc" type="string" indexed="true" stored="true"/>
+  <field name="nf_osmc" type="string" indexed="true" stored="true"/>
+  <field name="nf_mpls1" type="string" indexed="true" stored="true"/>
+  <field name="nf_mpls2" type="string" indexed="true" stored="true"/>
+  <field name="nf_mpls3" type="string" indexed="true" stored="true"/>
+  <field name="nf_mpls4" type="string" indexed="true" stored="true"/>
+  <field name="nf_mpls5" type="string" indexed="true" stored="true"/>
+  <field name="nf_mpls6" type="string" indexed="true" stored="true"/>
+  <field name="nf_mpls7" type="string" indexed="true" stored="true"/>
+  <field name="nf_mpls8" type="string" indexed="true" stored="true"/>
+  <field name="nf_mpls9" type="string" indexed="true" stored="true"/>
+  <field name="nf_mpls10" type="string" indexed="true" stored="true"/>
+  <field name="nf_cl" type="float" indexed="true" stored="true"/>
+  <field name="nf_sl" type="float" indexed="true" stored="true"/>
+  <field name="nf_al" type="float" indexed="true" stored="true"/>
+  <field name="nf_RouterIP" type="string" indexed="true" stored="true"/>
+  <field name="nf_eng" type="string" indexed="true" stored="true"/>
+  <field name="nf_exid" type="long" indexed="true" stored="true"/>
+  <field name="nf_tr" type="string" indexed="true" stored="true"/>
+
+  <field name="source_ip_data_Source" type="string" indexed="true" stored="true"/>
+  <field name="source_ip_data_Name" type="string" indexed="true" stored="true"/>
+  <field name="source_ip_data_Device" type="string" indexed="true" stored="true"/>
+  <field name="source_ip_data_Interface" type="string" indexed="true" stored="true"/>
+  <field name="source_ip_data_Continent" type="string" indexed="true" stored="true"/>
+  <field name="source_ip_data_Country" type="string" indexed="true" stored="true"/>
+  <field name="source_ip_data_State" type="string" indexed="true" stored="true"/>
+  <field name="source_ip_data_City" type="string" indexed="true" stored="true"/>
+  <field name="source_ip_data_Lat" type="float" indexed="true" stored="true"/>
+  <field name="source_ip_data_Long" type="float" indexed="true" stored="true"/>
+  <field name="source_ip_data_Timestamp" type="float" indexed="true" stored="true"/>
+
+  <field name="dest_ip_data_Source" type="string" indexed="true" stored="true"/>
+  <field name="dest_ip_data_Name" type="string" indexed="true" stored="true"/>
+  <field name="dest_ip_data_Device" type="string" indexed="true" stored="true"/>
+  <field name="dest_ip_data_Interface" type="string" indexed="true" stored="true"/>
+  <field name="dest_ip_data_Continent" type="string" indexed="true" stored="true"/>
+  <field name="dest_ip_data_Country" type="string" indexed="true" stored="true"/>
+  <field name="dest_ip_data_State" type="string" indexed="true" stored="true"/>
+  <field name="dest_ip_data_City" type="string" indexed="true" stored="true"/>
+  <field name="dest_ip_data_Lat" type="float" indexed="true" stored="true"/>
+  <field name="dest_ip_data_Long" type="float" indexed="true" stored="true"/>
+  <field name="dest_ip_data_Timestamp" type="float" indexed="true" stored="true"/>
+
+  <field name="source_geo" type="string" indexed="true" stored="true"/>
+  <field name="dest_geo" type="string" indexed="true" stored="true"/>
+
+</fields>
+
+<uniqueKey>id</uniqueKey>
+ 
+<types>
+  <fieldType name="date" class="solr.DateField" sortMissingLast="true" />
+  <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
+  <fieldType name="text" class="solr.TextField" sortMissingLast="true" />
+  <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>
+  <fieldType name="int" class="solr.TrieIntField" precisionStep="0" positionIncrementGap="0"/>
+  <fieldType name="float" class="solr.TrieFloatField" precisionStep="0" positionIncrementGap="0"/>
+  <fieldType name="long" class="solr.TrieLongField" precisionStep="0" positionIncrementGap="0"/>
+</types>
+</schema>

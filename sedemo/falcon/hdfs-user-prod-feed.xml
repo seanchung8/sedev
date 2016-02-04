@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<feed description="Backup user's home folders" name="hdfs-user-prod-feed"
+      xmlns="uri:falcon:feed:0.1">
+
+	<frequency>hours(1)</frequency>
+	<timezone>UTC</timezone>
+
+	<clusters>
+            <cluster name="sedemo-prod-primary-cluster" type="source">
+                        <validity start="2013-09-24T00:00Z" end="2099-10-26T00:00Z"/>
+                        <retention limit="months(999)" action="delete"/>
+            </cluster>
+             <cluster name="sedemo-prod-backup-cluster" type="target">
+                <validity start="2013-09-24T00:00Z" end="2099-10-26T00:00Z"/>
+		<retention limit="months(600)" action="delete"/>
+                <locations>
+                	<location type="data" path="/user" />
+                </locations>
+            </cluster>
+    </clusters>
+
+<locations>
+	<location type="data" path="/user"/>
+</locations>
+
+    <ACL owner="hdfs" group="hadoop" permission="0755"/>
+    <schema location="/none" provider="none"/>
+</feed>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="storm-demo-webapp/src/main/java"/>
+	<classpathentry kind="src" path="storm-streaming/src/main/java"/>
+	<classpathentry excluding="com/hortonworks/" kind="src" path="storm-streaming/src/test/java"/>
+	<classpathentry kind="src" path="storm-streaming/src/test/java/com/hortonworks"/>
+	<classpathentry kind="src" path="stream-simulator/src/main/generated-source"/>
+	<classpathentry excluding="com/hortonworks/streaming/impl/domain/transport/route/" kind="src" path="stream-simulator/src/main/java"/>
+	<classpathentry kind="src" path="stream-simulator/src/main/java/com/hortonworks/streaming/impl/domain/transport/route"/>
+	<classpathentry kind="src" path="stream-simulator/src/test/java"/>
+	<classpathentry kind="src" path="transport-domain/src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

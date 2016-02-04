@@ -1,0 +1,1 @@
+Development repository for Solution Engineers. This repository is only readable to Hortonworks employees.

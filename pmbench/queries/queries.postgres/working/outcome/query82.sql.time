@@ -1,0 +1,13 @@
+    i_item_id     |                                                                                 i_item_desc                                                                                 | i_current_price | i_manufact_id 
+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------
+ AAAAAAAAACJAAAAA | Again available bags breathe good circumstances. Thus final cases must                                                                                                      |           52.91 |           445
+ AAAAAAAADNCBAAAA | Serious studies reduce inadeq                                                                                                                                               |           55.87 |           100
+ AAAAAAAAEIKAAAAA | Issues should set neatly. International, compl                                                                                                                              |           45.30 |           254
+ AAAAAAAAELBDAAAA | National, old hours would                                                                                                                                                   |           32.92 |           648
+ AAAAAAAAMPBDAAAA | Properties may not protect eventually new, outstanding words. Thoughts may not work dramatically things. Styles wait members. Possible, competitive weeks could bring to a  |           50.19 |           445
+(5 rows)
+
+
+real	0m11.793s
+user	0m0.002s
+sys	0m0.003s
