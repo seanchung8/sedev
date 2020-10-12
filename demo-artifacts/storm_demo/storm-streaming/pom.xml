@@ -18,7 +18,7 @@
 		<hbase.version>0.98.0.2.1.1.0-385-hadoop2</hbase.version>
 		<active.mq.version>5.7.0</active.mq.version>
 		<truck.topology.domain.version>1.0.0-SNAPSHOT</truck.topology.domain.version>
-		<junit.version>4.5</junit.version>
+		<junit.version>4.13.1</junit.version>
 		<mail.version>1.4.3</mail.version>
 		<log4j.version>1.2.17</log4j.version>
 		<hive.version>0.13.0.2.1.1.0-385</hive.version>
