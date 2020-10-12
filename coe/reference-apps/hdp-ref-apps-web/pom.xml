@@ -12,7 +12,7 @@
 		<org.springframework-version>4.0.7.RELEASE</org.springframework-version>
 		<org.springframework.security-version>3.2.5.RELEASE</org.springframework.security-version>
 		<org.springframework.websocket></org.springframework.websocket>
-		<junit.version>4.5</junit.version>
+		<junit.version>4.13.1</junit.version>
 		<servlet.version>3.1.0</servlet.version>
 		<hive.version>0.14.0.2.2.0.0-2041</hive.version>
 		<hbase.version>0.98.4.2.2.0.0-2041-hadoop2</hbase.version>
